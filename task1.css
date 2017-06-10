@@ -1,0 +1,22 @@
+Выбрать input типа checkbox.
+	input[type="checkbox"]
+Выбрать input типа checkbox, НЕ отмеченный.
+	input[type="checkbox"]:not([checked])
+Найти все элементы с id=message или message-*
+	#message
+Найти все элементы с id=message-*.
+
+Найти все ссылки на файлы с расширением .zip.
+a[href$=".zip"]
+Найти все элементы с атрибутом data-action, содержащим delete в списке (через пробел).
+[data-action*="delete"]
+Найти все элементы, у которых ЕСТЬ атрибут data-action, но он НЕ содержит delete в списке (через пробел).
+[data-action]:not("delete")
+Выбрать все чётные элементы списка #messages.
+#messages:nth(2n)
+Выбрать один элемент сразу за заголовком h3#widget-title на том же уровне вложенности
+h3#widget-title + li
+Выбрать все ссылки, следующие за заголовком h3#widget-title на том же уровне вложенности.
+h3#widget-title + a
+Выбрать ссылку внутри последнего элемента списка #messages
+#messages a:last-child

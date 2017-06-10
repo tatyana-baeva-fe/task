@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forma</title>
+	<style>
+		form {
+			width: 400px;
+			border: 1px solid #000;
+			display: block;
+			margin: 0 auto;
+			padding: 10px;
+		}
+	input {
+		width: 380px;
+	}
+	label {
+		margin-top: 10px;
+	}
+	.radio-group label {
+		display: inline;
+		margin-right: 10px;
+	}
+input[.radio-group] {
+	width: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+	button {
+  display: inline-block;
+  width: 40%;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+input[class="radio-group"] {
+	display: inline;
+	width: 10px;
+	</style>
+</head>
+<body>
+				<form action="#" method="post">
+					<label>
+							<span>Ваше имя</span>
+							<input type="text" name="firstname" placeholder="Например, Иван Иванович"><br>
+					</label>
+					<label>
+							<span>Ваш род деятельности</span>
+							<input type="text" name="Lastname" placeholder="Например, Выращиваю огурцы"><br>
+					</label>
+						    <p>Согласны ли вы с условиями?</p>
+								    <div class="radio-group">
+								      <label>
+								        <input class="radio-group" type="radio" name="radio" value="Yes"/> Категорически ДА!
+								      </label>
+								      <label>
+								        <input class="radio-group" type="radio" name="radio" value="No"/> Категорически НЕТ!
+								    </div>
+					<button type="submit">Отправить</button>
+			</form>
+</body>
+</html>
